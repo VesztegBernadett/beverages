@@ -7,10 +7,10 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link text-white {{ request()->routeIs('home') ? 'active' : '' }}" href="{{ route('home') }}">Főoldal</a>
-          <a class="nav-link text-white {{ request()->routeIs('beverages.packaging') && request()->route('packaging') == 'műanyag' ? 'active' : '' }}" href="{{ route('beverages.can', ['can' => 'műanyag']) }}">Műanyag</a>
-          <a class="nav-link text-white {{ request()->routeIs('beverages.packaging') && request()->route('packaging') == 'fém' ? 'active' : '' }}" href="{{ route('beverages.can', ['can' => 'fém']) }}">Fém</a>
-          <a class="nav-link text-white {{ request()->routeIs('beverages.packaging') && request()->route('packaging') == 'üveg' ? 'active' : '' }}" href="{{ route('beverages.can', ['can' => 'üveg']) }}">Üveg</a>
-          <a class="nav-link text-white {{ request()->routeIs('beverages.packaging') && request()->route('packaging') == 'papír' ? 'active' : '' }}" href="{{ route('beverages.can', ['can' => 'papír']) }}">Papír</a>
+          <a class="nav-link text-white {{ request()->routeIs('beverages.packaging') && request()->route('packaging') == 'műanyag' ? 'active' : '' }}" href="{{ route('beverages.packaging', ['packaging' => 'műanyag']) }}">Műanyag</a>
+          <a class="nav-link text-white {{ request()->routeIs('beverages.packaging') && request()->route('packaging') == 'fém' ? 'active' : '' }}" href="{{ route('beverages.packaging', ['packaging' => 'fém']) }}">Fém</a>
+          <a class="nav-link text-white {{ request()->routeIs('beverages.packaging') && request()->route('packaging') == 'üveg' ? 'active' : '' }}" href="{{ route('beverages.packaging', ['packaging' => 'üveg']) }}">Üveg</a>
+          <a class="nav-link text-white {{ request()->routeIs('beverages.packaging') && request()->route('packaging') == 'papír' ? 'active' : '' }}" href="{{ route('beverages.packaging', ['packaging' => 'papír']) }}">Papír</a>
         </div>
       </div>
     </div>
